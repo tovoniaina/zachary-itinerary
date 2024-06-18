@@ -1,0 +1,679 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Madagascar tour customized itinerary for Zachary</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="df2c5c53-3c44-446d-957a-99acf5350d29" class="page sans"><header><img class="page-cover-image" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Linkedin_-_CoverCover.jpg" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">✈️</span></div><h1 class="page-title">Madagascar tour customized itinerary for Zachary</h1><p class="page-description"></p></header><div class="page-body"><h1 id="ac8acf1f-8675-4332-a107-490b9ad49233" class="">Map</h1><hr id="491c9e73-1c9c-4c45-b6f4-0ae13ce88d5f"/><figure id="706e1cc5-19f1-4aa7-9405-8bf00f2eab0b" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled.png"><img style="width:1264px" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled.png"/></a></figure><h1 id="f1393560-0a24-462e-ba8b-1f5114592076" class="">Tour duration</h1><hr id="843f3328-64e6-4226-8c73-6fecacd6510f"/><h3 id="b57d50ce-2d3c-44f9-a7a4-7c0634972ad4" class="">⇒ 8 Days &amp; 7 nights</h3><h1 id="ffa08f0f-9faa-452d-a5f2-03a18a9c1438" class="">There is 3 charter flights on this tour</h1><hr id="6fa6a133-3f4c-49c7-b93f-e77d7f09e5c9"/><ol type="1" id="f82954b1-a76e-4276-9b0f-0a30b2e9af62" class="numbered-list" start="1"><li>Day 2 ⇒ Antananarivo - Isalo (Ranohira)</li></ol><ol type="1" id="358c818a-1f14-4d63-a7c6-95c2538e83ea" class="numbered-list" start="2"><li>Day 3 ⇒ Isalo - Bekopaka</li></ol><ol type="1" id="0abc209e-1894-40ed-b119-9c6b9347c116" class="numbered-list" start="3"><li>Day 7 ⇒ Morondava - Antananarivo</li></ol><p id="0302c28e-1289-46d8-b838-e5c85d31a583" class=""><strong>Aircraft technical specifications</strong></p><p id="00f41a92-b96c-4446-b0aa-bb663667fe2c" class="">For more information on the company insuring the flight, please visit this website <strong><a href="https://mta.mg/en/flotte/cessna-206-2/">https://mta.mg/en/flotte/cessna-206-2/</a></strong></p><table id="2def97bb-7acc-4bf8-9b64-0dcf9a7a777b" class="simple-table"><tbody><tr id="279ac17b-f906-42b9-9afc-80467980adf4"><td id="s\v=" class="">Manufacturer</td><td id=":jNk" class="">Cessna Aircraft Company</td></tr><tr id="a0113f59-6fee-431c-9657-7d146f76bc9a"><td id="s\v=" class="">Role</td><td id=":jNk" class="">Light transport</td></tr><tr id="10de46af-20d7-4b5e-b14b-8ce123f289a5"><td id="s\v=" class="">Engine</td><td id=":jNk" class="">Continental TSIO-520-C</td></tr><tr id="bb6d636b-af6d-4a32-af3b-91900007cfe2"><td id="s\v=" class="">Cruising speed</td><td id=":jNk" class="">210 km/h</td></tr><tr id="f01224c8-e120-4092-a8ce-2022790f061b"><td id="s\v=" class="">Crew</td><td id=":jNk" class="">1</td></tr><tr id="32ada6c9-2587-418d-98bf-d2b464d65a63"><td id="s\v=" class="">Passengers</td><td id=":jNk" class="">5</td></tr><tr id="769bc310-fdba-4778-927a-a8097b4fb64e"><td id="s\v=" class="">Freight</td><td id=":jNk" class="">350 KG</td></tr></tbody></table><figure id="ea7256f0-29e7-4a97-887c-d0a7c5af9891" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%201.png"><img style="width:1280px" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%201.png"/></a></figure><h1 id="363a7661-9ef0-4a8e-abf7-638d64f983dc" class="">Adventure Level</h1><hr id="2421349f-7edd-4ab2-af65-7ad877f2482b"/><ul id="21568ceb-a437-4e42-8db3-e530ab0e66f1" class="bulleted-list"><li style="list-style-type:disc"><em><mark class="highlight-gray">Easy</mark></em></li></ul><ul id="9d3453c4-f79d-445c-b3c4-f650e513977f" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-teal"><strong>⇒ Medium</strong></mark></li></ul><ul id="9558e0da-995f-4155-9bd9-0d0aea51a782" class="bulleted-list"><li style="list-style-type:disc"><em><mark class="highlight-gray">Mix of Medium &amp; Hard</mark></em></li></ul><ul id="b0fcac21-4720-4e16-a599-c175ce8e874f" class="bulleted-list"><li style="list-style-type:disc"><em><mark class="highlight-gray">Hard</mark></em></li></ul><h1 id="b81dfde7-1fee-4ba4-bb75-5ccc7ee3c2b9" class="">Day 1 : Jul 23 =&gt; Arrival in Tana then transfer to Airport</h1><hr id="49779cee-833f-46f1-99b0-b7eb9605f14a"/><p id="a9dfb510-7e57-45e9-9df1-f894dbff4d9f" class="">Upon your arrival at Ivato International Airport, you&#x27;ll be warmly welcomed by our representative who will assist you with your transfer to your accommodation in the city. Take this day to rest and rejuvenate after your journey, preparing yourself for the exciting adventures that await in the coming days.</p><h3 id="1ce8af77-b1a2-46e5-b6bd-0d1bf82e3d3d" class="">Overnight : San Cristobal Hotel ★★★</h3><figure id="45a30031-61b2-4867-92d5-cb2c3a02cc99" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%202.png"><img style="width:1346px" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%202.png"/></a></figure><h1 id="03a06d15-4620-45c1-902e-ccbcaa0194c7" class="">Day 2 : Jul 24 =&gt; Take a charter flight to Isalo - Visit in the national parc + Trekking to the natural swimming pool</h1><hr id="8395a8a8-4fdb-46d7-88c1-5a4d9ed7aa82"/><p id="b00a07ce-83ae-452d-9a9b-594ce9780825" class="">Early in the morning, a private car will drop you off at the airport to catch your charter flight to Isalo.</p><p id="6c5a6c21-ffce-4b62-ba7e-19b5cab6ad22" class="">Upon arrival, You&#x27;ll explore the breathtaking Isalo National Park, a true gem of Madagascar&#x27;s natural wonders. Embark on a guided hike through the park&#x27;s rugged landscapes, marveling at the massive sandstone formations that have been sculpted by wind and water over millions of years. Keep your eyes peeled for the park&#x27;s diverse flora and fauna, including the iconic ring-tailed lemurs and the elusive Barter&#x27;s antelope.</p><p id="72ed672d-6996-4acf-bc47-6c9d39f304ff" class="">One of the highlights of your visit will be the trek to the natural swimming pool, a hidden oasis amidst the arid surroundings. Follow your guide along the winding trails, taking in the stunning vistas of the Isalo Massif, before arriving at this serene spot. Cool off in the refreshing waters of the natural pool, surrounded by towering rock formations that create a striking contrast against the crystal-clear waters.</p><p id="bb95e177-5319-46af-8302-194a6f7f8251" class="">After an invigorating day of exploring, you&#x27;ll have the opportunity to witness a spectacular sunset over the Isalo landscapes, painting the rocky formations in warm hues of orange and red – a truly unforgettable sight.</p><h3 id="767c5fc5-b47a-49bf-b917-fa3a78a7850a" class="">Overnight : <strong>Le Jardin du Roy </strong>★★★★  </h3><figure id="0badf5ce-52d6-4263-a277-e25c8f04300c" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled.jpeg"><img style="width:960px" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled.jpeg"/></a></figure><h1 id="b7137d54-c3ec-4ca9-8498-b3565f821a74" class="">Day 3 : Jul 25 =&gt; Take a charter flight from Isalo to Bekopaka (Big Tsingy visit - Climbing + Hiking + Suspension bridge)</h1><hr id="6a99cfec-0695-4b1d-bc55-acff824aae9a"/><p id="a32b9eb0-46eb-4e2f-97c1-d094d174e483" class="">Early in the morning, catch your charter flight directly to Bekopaka.</p><p id="2851eb9b-ed86-43e4-85d6-54d87f37c8c4" class="">Upon arrival, You&#x27;ll embark on an extraordinary adventure to the Grand Tsingy, a geological wonder within the Tsingy de Bemaraha National Park. This UNESCO World Heritage Site boasts a unique and surreal landscape of towering limestone pinnacles, carved by natural erosion over millions of years. After a briefing from your expert guide, you&#x27;ll set off on a thrilling hike through this otherworldly terrain, navigating narrow passages and scaling ladders to explore the intricate network of canyons and caves. Along the way, you&#x27;ll have the opportunity to spot the park&#x27;s diverse flora and fauna, including several endemic species found nowhere else on Earth. Towards the end of your exploration, you&#x27;ll cross the iconic suspension bridge, suspended high above the canyon, offering breathtaking views of the surrounding tsingy formations. The Grand Tsingy promises to be a highlight of your Madagascan adventure, offering an unforgettable experience amidst one of nature&#x27;s most remarkable creations.</p><h3 id="755d0cdc-675f-40c0-9e19-4b6f6ec6d1ee" class="">Overnight : Soleil des Tsingy ★★★  </h3><figure id="3922f824-c4c6-4279-b1cb-7d33e9931680" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%201.jpeg"><img style="width:960px" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%201.jpeg"/></a></figure><h1 id="216945fa-67a0-4a5e-a832-25a8c1828031" class="">Day 4 : Jul 26 =&gt; Bekopaka (Manambolo Gorge river descent + Small Tsingy visit + Vazimba tombs visit)</h1><hr id="0687f947-68f8-4d95-8091-a9771e191471"/><p id="6c777ccc-c60d-4764-9445-a8fab9859ab8" class="">Today you&#x27;ll discover the Small Tsingy, a maze-like network of sharp limestone needles. Navigate through this intricate geological wonder, marveling at nature&#x27;s artistry.</p><p id="5a43f7ad-222e-4a08-8eae-ddeea12480a2" class="">Later, venture to the awe-inspiring Gorge of Manambolo River, a deep ravine carved by powerful waters over centuries. Take in the breathtaking views of the gorge&#x27;s towering walls adorned with lush vegetation and cascading waterfalls. Keep an eye out for the park&#x27;s unique flora and fauna, including endemic lemurs, birds, and reptiles.</p><h3 id="9dd8cb59-06a7-4d42-b445-3461be5b2a4b" class="">Overnight : Soleil des Tsingy ★★★  </h3><figure id="8c46a54a-7ed7-420b-8c52-b4a79113fb06" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%202.jpeg"><img style="width:1008px" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%202.jpeg"/></a></figure><h1 id="60e85720-c87a-437f-892e-abca66677236" class="">Day 5 : Jul 27 =&gt; Drive in 4x4 car from Bekopaka to Kirindy (Night walk visit in Kirindy forest)</h1><hr id="47a74820-eb7a-4934-b745-f11a7063134d"/><p id="d64fcf21-6334-4891-b90d-c15d746c55d9" class="">Take a 4x4 off-road car to cross the adventurous road from Bekopaka to Kirindy. There are 2 ferry crossings (one in the Manambolo river, the other in the Tsiribihina river).</p><p id="43c6b26d-9e8f-4e1e-8cf6-ef4f6ca87349" class="">Once you reach your accommodation in Kirindy, check in and enjoy a delicious dinner, savoring the local flavors of the region.</p><p id="8e2b0b08-b599-4146-b2e0-71dcaf6b12fc" class="">After nightfall, prepare for an unforgettable experience as you embark on a guided night walk through the Kirindy forest. This nocturnal excursion offers a unique opportunity to witness the reserve&#x27;s diverse nocturnal wildlife in their natural habitat. Keep your eyes peeled for the elusive fosa (Malagasy civet), the iconic mouse lemurs, and a variety of fascinating insects and reptiles that come alive under the cover of darkness.</p><h3 id="0acde4be-d1a5-43e1-8a56-53a4418562b4" class="">Overnight : Relais du Kirindy ★★★  </h3><figure id="4775bda2-bf04-4858-bf6c-53192b48a28b" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%203.jpeg"><img src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%203.jpeg"/></a></figure><h1 id="8a692cd2-261e-4112-b615-299625d79783" class="">Day 6 : Jul 28 =&gt; Morning forest visit then drive from Kirindy to Morondava stop at Baobab Alley for a magical landscape in the sunset</h1><hr id="52629cff-c5b6-43a0-8c6b-15b72d50d47c"/><p id="e3d24157-4ec9-41a8-a2a3-6b039ce2b89e" class="">Wake up early and immerse yourself in the beauty of the Kirindy Reserve with a 3-hour guided forest walk. This dry deciduous forest is home to an incredible array of endemic species, including the iconic fosa (Malagasy civet), various lemur species, and a diverse range of birds and reptiles. Your knowledgeable guide will help you spot and identify the unique flora and fauna as you explore the well-maintained trails.</p><p id="975426b3-be07-452d-a70e-ef46323e7f09" class="">Afterwards, drive to reach the Baobab Alley</p><p id="855fe320-0174-490d-b069-f2e13206adbc" class="">The highlights include witnessing the iconic Baobab Alley at sunset - a mesmerizing sight as the golden rays bathe the ancient baobab trees. Capture unforgettable photographs of these majestic giants silhouetted against the vibrant sky. After this breathtaking spectacle, continue to Morondava for an overnight stay, reflecting on the day&#x27;s extraordinary experiences.</p><h3 id="62bf19c1-f77c-43aa-ac4c-2638ea75618f" class="">Overnight : Vezo Beach Hotel ★★★  </h3><p id="918b9a8c-9463-4e23-a6b3-17ec069ef6a2" class="">
+</p><figure id="9dfb602f-5e1c-4bec-81e4-6a33954aa44d" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%204.jpeg"><img style="width:960px" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%204.jpeg"/></a></figure><h1 id="d0c746ab-0081-47b6-b23b-722cbf154713" class="">Day 7 : Jul 29 =&gt; Take a charter flight from Morondava to Antananarivo - Upon arrival visit Lemurs park</h1><hr id="33e0c24c-f1e4-48b7-b62d-a33db030419f"/><p id="9550ce5c-d97e-4f98-84f4-67e0ce78866b" class="">Your journey seamlessly transitions from the rustic charm of Morondava to the bustling energy of Antananarivo, thanks to a convenient charter flight. </p><p id="0caba97e-9823-4e4b-9b54-ee21c5b846db" class="">Upon arrival in the capital, You&#x27;ll be driving to Lemurs Park, just 22km west of Antananarivo, to discover a variety of lemur species.<br/>You&#x27;ll be interacting with lemurs such as the Ring-tailed Lemur.<br/>Afterwards, return to your hotel for the night.<br/></p><h3 id="8e2b0ad4-0b21-4e0e-8850-f3d3ee31b57d" class="">Overnight : San Cristobal Hotel ★★★</h3><figure id="11270b7d-faa3-4a7e-a9b9-dd6ee37596fd" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%203.png"><img style="width:1818px" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%203.png"/></a></figure><h1 id="4f7cdcb0-b06b-4e5d-9394-ce43e1cda40e" class="">Day 8 ⇒ Antananarivo - City tour &amp; souvernirs shopping + Airport Transport</h1><hr id="f16a5af9-1842-4bb2-9a8d-0b452a9a6ed5"/><p id="a609dfa5-193f-4fc0-a17d-9e24eda279c2" class="">City tour to explore the capital in order to visit the upper town Tana, including the queen palaces, the old picturesque cathedral and then the lake Anosy. and a time to go shopping at the famous Digue market selling handcrafts, stones, woodcarvings, raffia, and so forth.</p><p id="e9f3a762-e293-44e5-8416-d3bebf8b2666" class="">Then, in the afternoon, transfer to the airport for your flight taking you back home</p><h3 id="3a022293-6b16-49d9-9855-2c2022881edf" class="">End of our service</h3><figure id="6e13055f-52d3-453f-abf0-bd7cfd498153" class="image"><a href="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%205.jpeg"><img style="width:768px" src="Madagascar%20tour%20customized%20itinerary%20for%20Zachary%20df2c5c533c44446d957a99acf5350d29/Untitled%205.jpeg"/></a></figure><h1 id="0d265e73-f909-42f1-80fd-9240bfebbb23" class="">FAQS : Please visit in our Website ⇒ <a href="https://www.traveliasafari.com/faqs">https://www.traveliasafari.com/faqs</a> </h1><h1 id="d147fd07-6c2b-4fd1-8a6f-700f6d0b7442" class="">Inclusions</h1><p id="91aa8631-27c7-401c-866d-d65b255b2d2c" class="">
+</p><p id="fa61c4e1-b4a4-4ebe-8f74-14aa741ce85f" class="">1/ Accomodations in the Hotel + Half board (Breakfasts + Dinners)</p><p id="a7a401ac-d85d-4b6b-b983-9cce5c1c87ff" class="">2/ 4x4 Car + Fuel During the tour</p><p id="9dc9ef1b-be65-4b5d-99d3-60d98a164823" class="">3/ Licensed English driver guide during the tour</p><p id="f3460d5f-7364-4c33-ba5f-c0818bc38171" class="">4/ Local guides fees</p><p id="8ba9cd88-d534-4189-a439-39ff250fc0da" class="">5/ Park tickets entry fees</p><p id="a44493ac-d56d-4ef8-8f58-a616dc81f2d3" class="">6/ Ferry fees </p><p id="b6d79786-ed03-4524-88df-be68694c120c" class="">7/ Transfert to/from Airport - Hotel</p><p id="dbf02d8e-c0ca-493a-b41d-97a345aaf231" class="">8/ 1 bottles per person of mineral water every days</p><h1 id="ba40f405-f42a-48bd-99bb-80ae68cfc1ea" class=""><strong>Exclusions</strong></h1><p id="fbd51ccf-481b-441a-9602-019b472a4c67" class="">1/ All Flights</p><p id="f72503c6-4b1e-456a-8197-7c489e226a46" class="">2/ Lunches</p><p id="0f8aae0e-00d3-429f-a7f8-f8435fc5ae4c" class="">3/ Personal spending, drinks, dinner and lunches</p><p id="0acf5375-73f4-4b43-b5dc-c772c23e2e81" class="">4/ Gratuities for the local team</p><h1 id="3d1b0a49-874b-443c-87e9-17ccd7cdbb92" class="">Tour fee</h1><hr id="79fac738-cf77-4253-90a6-d31ea207f339"/><table id="98d7c793-cf77-48f1-b398-210fe47202b4" class="simple-table"><tbody><tr id="b0119adf-2ecf-40b4-b349-48e7f49826b8"><td id="UE[|" class=""><strong>Days &amp; Nights</strong></td><td id=";cw?" class=""><strong>Price per person</strong></td><td id="[&gt;xm" class=""><strong>Total Price for 5 persons</strong></td></tr><tr id="1025b18f-7704-484b-b2a1-b88dc8ecccda"><td id="UE[|" class="">8 days &amp; 7 nights</td><td id=";cw?" class="">US $2,100</td><td id="[&gt;xm" class="">US $10,500</td></tr></tbody></table><h1 id="ca46b32f-b12c-4291-abdd-2e08e666b031" class="">Useful informations</h1><hr id="139d7af0-df8c-4f61-9d5b-b637fd3f5b38"/><h3 id="4ee17fff-9145-4484-b5bd-c6559a8554fc" class="">Recommended travel equipment </h3><hr id="d01c98c3-0297-4bef-a4c9-dcde7d796ed8"/><ul id="cd2a91c9-74c7-43cf-ac5f-77aa95393c9e" class="bulleted-list"><li style="list-style-type:disc">Passport, flight information, means of payment</li></ul><ul id="28d4e45d-326c-4e5c-ab6f-e25dbb04a714" class="bulleted-list"><li style="list-style-type:disc">Photocopies of key documents (keep them separate from the originals)</li></ul><ul id="c907775f-79a0-42be-bfca-b45ce3d6d907" class="bulleted-list"><li style="list-style-type:disc">Travel bag/backpack/suitcase daypack</li></ul><ul id="3d9b0444-32f9-46ce-9de8-713dcb5d1354" class="bulleted-list"><li style="list-style-type:disc">Light summer clothing, preferably a cotton sweater</li></ul><ul id="16dea74d-8416-40be-903f-374bcd3efed9" class="bulleted-list"><li style="list-style-type:disc">Swimwear</li></ul><ul id="94435eee-a56f-45ff-b826-337914a71b63" class="bulleted-list"><li style="list-style-type:disc">Sun protection</li></ul><ul id="6465a3cc-c337-4078-8f5e-8f84444dc38e" class="bulleted-list"><li style="list-style-type:disc">First aid kit, personal medication, insect</li></ul><ul id="0ed00a54-50f0-4a97-be16-152246842264" class="bulleted-list"><li style="list-style-type:disc">Flashlight/headlamp, spare batteries for photographic equipment, films, spare batteries and spare batteries for binoculars</li></ul><h3 id="0eae84d2-6c88-4776-ae7b-0d1fc32dd24b" class=""><strong>Money, credit cards and expenses</strong></h3><hr id="6f1b20ae-fbd0-48fd-a700-0e3544307c45"/><p id="0b0906a6-5f79-43f5-b9c5-3cd897ffdab9" class=""><strong>Understanding Money in Madagascar:</strong></p><ul id="aae8afd8-49ff-4bc7-8692-86255673be50" class="bulleted-list"><li style="list-style-type:disc"><strong>Currency:</strong> The Malagasy currency is the Ariary (MGA), divided into 5 Iraimbilanja.</li></ul><ul id="20cfae42-4efb-4ab5-8486-163b5e0fc107" class="bulleted-list"><li style="list-style-type:disc"><strong>Availability:</strong> Ariary is primarily available at local banks, official exchange offices in hotels, and the airport in Antananarivo.</li></ul><ul id="0e624cac-0345-4d23-a8ee-53c479e5d027" class="bulleted-list"><li style="list-style-type:disc"><strong>Recommendation:</strong> We suggest bringing cash in Euros (EUR), British Pounds (GBP), or US Dollars (USD) for exchange. <strong>Tip:</strong> Exchanging a small amount (200-350 EUR) for Ariary upon arrival at the airport is convenient. You can exchange more throughout your trip as needed. Remember, leftover Ariary cannot be converted back to foreign currency, so exchange smaller amounts at a time. <strong>Important:</strong> Avoid black markets for currency exchange.</li></ul><p id="df109e2e-4b0b-4fae-bf70-fe5c8c83827f" class=""><strong>Credit Cards:</strong></p><ul id="a9b578de-0370-40b3-bf29-2f8f4ffd617e" class="bulleted-list"><li style="list-style-type:disc"><strong>Limited Use:</strong> Credit cards are only accepted in some hotels, primarily in major cities like the capital (Antananarivo) and provincial capitals.</li></ul><ul id="894ac424-bd12-4e71-9657-33b170c9d4a7" class="bulleted-list"><li style="list-style-type:disc"><strong>Fees Apply:</strong> Using your credit card may incur fees depending on your bank.</li></ul><ul id="cc120a14-ddba-49eb-85ef-43dcbd798bb4" class="bulleted-list"><li style="list-style-type:disc"><strong>ATMs:</strong> Withdrawing cash from ATMs is possible at major banks, but ATMs are not widely available, especially in rural areas.</li></ul><p id="ee2feff9-df44-4331-843d-5445c874da08" class=""><strong>Bottom Line:</strong> Cash is king in Madagascar, especially outside major cities. Plan to use cash for most purchases.</p><p id="10537ef8-b740-413d-95b4-3c2c2ea2f948" class=""><strong>Meals expenses </strong></p><p id="1f332a90-34e1-4a1a-916a-cc2f78047ac9" class="">Expect a maximum of $15 per meal (lunch and dinner), all breakfasts are included.</p><h3 id="4d105dae-29d4-48df-af69-5d7382a0bb45" class=""><strong>Visa Requirements</strong></h3><hr id="535bdf2e-9730-4407-97c2-4d35c44b28f1"/><p id="68df6e1a-6304-4f89-88ff-078a0561665a" class="">For stays in Madagascar, a short-term visa is required. Here&#x27;s a breakdown of the cost:</p><ul id="10719685-0dcf-4dc1-a711-8204fa95fca7" class="bulleted-list"><li style="list-style-type:disc"><strong>Less than 15 days:</strong> €10 (administrative fee)</li></ul><ul id="8e57b6b4-2b40-4adb-94ab-a66ec98780fc" class="bulleted-list"><li style="list-style-type:disc"><strong>More than 15 days:</strong> €35 (visa fee)</li></ul><p id="1fae7898-9bf6-4889-87f2-2dbdc32d40fe" class=""><strong>Obtaining Your Visa:</strong></p><p id="4f8dc4ce-2018-476f-9586-46d455b3cad5" class="">There are two convenient ways to secure your visa:</p><ol type="1" id="e0bf6ea6-e010-4ffc-b543-6afa88fe8741" class="numbered-list" start="1"><li><strong>Apply Online:</strong> This is the recommended option to avoid any potential delays upon arrival. Visit the official government website:  <a href="https://evisamada-mg.com/en/home">https://evisamada-mg.com/en/home</a></li></ol><ol type="1" id="91e7d0c0-956f-4fa4-b02a-2c93bad0afa2" class="numbered-list" start="2"><li><strong>Visa on Arrival:</strong> Obtain your visa upon arrival at the airport immigration office by presenting your passport.</li></ol><h3 id="2f29b5fe-8f2e-4127-a255-fc9641cd032a" class="">Tips and gratuities</h3><hr id="219d532b-e395-4b6b-ad20-32e10ce9fc1f"/><p id="40c8dc31-be1c-4adc-a8d3-ee82dc4ee535" class="">We believe tipping is a personal choice for each traveler. However, it&#x27;s important to understand that tipping is customary in Madagascar, where wages tend to be lower.  Consider tipping to show your appreciation for good service.</p><p id="cf76a80e-b11b-49ee-8505-4c5112af86fa" class=""><strong>Here&#x27;s a general guideline:</strong></p><ul id="4b766ce4-0e2b-4f05-9b21-f6e174fc86bf" class="bulleted-list"><li style="list-style-type:disc"><strong>Drivers:</strong> €5 USD per day</li></ul><ul id="a0d70606-a6f1-483b-99d2-621e2564b261" class="bulleted-list"><li style="list-style-type:disc"><strong>Local Guides:</strong> €3-€5 USD per day</li></ul><ul id="9d1b5880-ed2e-4d13-85db-532c4b678bfc" class="bulleted-list"><li style="list-style-type:disc"><strong>National Guides:</strong> $8-$10 USD per day</li></ul><ul id="4a93362f-ec38-4a3a-855a-8b1514a85407" class="bulleted-list"><li style="list-style-type:disc"><strong>Restaurant Waiters:</strong> 10% of the bill (adjust based on service quality)</li></ul><p id="8820db07-d52f-43e4-a984-b3add734afe6" class=""><strong>Explanation:</strong></p><ul id="233481ee-7da0-4085-a172-9946832d6c47" class="bulleted-list"><li style="list-style-type:disc"><strong>Drivers:</strong> Drivers typically receive a smaller tip compared to guides.</li></ul><ul id="819f72e2-77d9-4a5f-ab91-93258b883643" class="bulleted-list"><li style="list-style-type:disc"><strong>Local Guides:</strong> Local guides, who might be specific to a town or region, can be tipped in this range.</li></ul><ul id="172e9135-c8b4-4052-ad25-9840bb4c84e1" class="bulleted-list"><li style="list-style-type:disc"><strong>National Guides:</strong> National guides, who are often more experienced and have broader knowledge, can receive a slightly higher tip.</li></ul><h3 id="63ef585a-6108-4665-bc84-16f67006bf86" class="">Policy on breaks during en-route travel</h3><hr id="f6dbf9a1-2106-41ea-b15d-7020a1ed7b51"/><p id="70995373-073a-4ed4-b873-811be400366c" class="">Our experienced guides know the perfect spots to stretch your legs, capture stunning photos, and enjoy breathtaking panoramic views, all while ensuring your safety and keeping us on schedule.  Breaks are typically 15 minutes long and strategically placed every 2 hours during travel days.</p><h3 id="5ccecc75-4190-46e0-bf7c-c4c31bdd32b5" class=""><strong>Road Conditions</strong></h3><hr id="01fd7967-e6e7-4e9f-a21b-d637be6357fa"/><p id="7d5aad33-66eb-43a5-90c5-77f62374a2c5" class="">While Madagascar&#x27;s roads may not meet Western standards,<br/>It should be noted that road conditions in Madagascar generally do not meet Western standards, with many roads being in poor condition and riddled with potholes.<br/></p><p id="1d6118d9-39e4-4247-95e3-15b321fa5677" class=""><strong>Comfort is Key:</strong></p><p id="a4ff1e61-f8c9-465d-a1a3-a5a5cc5cccea" class="">At Travelia Safari, we prioritize your comfort. That&#x27;s why we provide our guests with the most comfortable 4x4 vehicles, ensuring a smooth ride wherever your adventure takes you.</p><p id="6ca7aada-8a11-4687-84db-1bc4dc07448c" class=""><strong>The Untamed Beauty of Morondava:</strong></p><p id="aa569074-e67a-46be-ad07-ebb318fa0491" class="">Reaching Morondava, Kirindy, and Bekopaka requires traversing an unpaved, adventurous route. While it might be bumpy, there&#x27;s no need to worry! During the dry season (August), the roads are clear and easily navigated by our reliable 4x4 air-conditioned vehicles.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
